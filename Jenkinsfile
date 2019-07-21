@@ -8,7 +8,9 @@ pipeline {
     stage('Checkout') { 
       steps {
         echo "in checkout"
-        checkout scm
+        echo "sleep 120"
+        sh 'sleep 120'
+        // checkout scm
         //git 'https://github.com/jyang49/multibranch.git'
       }
     }
