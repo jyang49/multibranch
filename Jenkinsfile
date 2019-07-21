@@ -3,9 +3,12 @@ pipeline {
   tools {
     maven 'mymaven3.5'
   }
+
+  /*
   options {
     skipDefaultCheckout()
   }
+  */
   
   stages {
     stage('Checkout') { 
