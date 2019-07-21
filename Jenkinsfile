@@ -4,11 +4,9 @@ pipeline {
     maven 'mymaven3.5'
   }
 
-  /*
   options {
     skipDefaultCheckout()
   }
-  */
   
   stages {
     stage('Checkout') { 
@@ -16,7 +14,7 @@ pipeline {
         echo "in checkout"
         //echo "sleep 120"
         // sh 'sleep 120'
-        // checkout scm
+        checkout scm
         //git 'https://github.com/jyang49/multibranch.git'
       }
     }
