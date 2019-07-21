@@ -7,7 +7,8 @@ pipeline {
   stages {
     stage('Checkout') { 
       steps {
-        echo "no checkout"
+        echo "in checkout"
+        checkout scm
         //git 'https://github.com/jyang49/multibranch.git'
       }
     }
