@@ -5,9 +5,10 @@ pipeline {
   }
   
   stages {
-    stage('Check out') { 
+    stage('Checkout') { 
       steps {
-        git 'https://github.com/jyang49/multibranch.git'
+        echo "no checkout"
+        //git 'https://github.com/jyang49/multibranch.git'
       }
     }
     stage('Build') { 
